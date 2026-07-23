@@ -1,6 +1,7 @@
 // C++ program for the implementation of Bubble sort
 #include <iostream>
 using namespace std;
+
 // Function to perform Bubble Sort
 void bubbleSort(int arr[], int n)
 {
@@ -17,24 +18,30 @@ void bubbleSort(int arr[], int n)
         }
     }
 }
+
 int main()
 {
     int n;
+
     cout << "Enter the number of elements: ";
     cin >> n;
 
     int arr[n];
+
     cout << "Enter the elements: ";
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
+
     // Call the function
     bubbleSort(arr, n);
+
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
+
     return 0;
 }
